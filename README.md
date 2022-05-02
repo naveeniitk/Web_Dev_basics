@@ -1,2 +1,2 @@
 # Web_Dev_Advanced
-Tutorial
+Tutorial of HTML/CSS/JS
