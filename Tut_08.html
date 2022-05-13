@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is how u create Basic Html Form is build </h2>
+
+    <!-- action is where the all the data which is entered in the form gets submitted like php -->
+    <form action="backend.php">
+        
+        <!-- div : to make division in the page -->
+        <!-- div : is a block element it take the whole width and the next element goes below automatically -->
+        <div>
+            <!-- This can make some text selection to lead to its input field  -->
+            <label for="name">Name : </label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Date : <input type="date">
+        </div>
+        <br> <!-- br is not recommended-->
+        <div>
+            Role : <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            <!-- name here : by which my backend will identify this tag -->
+            <label for="ename">Email : </label>
+            <input type="email" name="myEmail" id="ename">
+        </div>
+        <br>
+        <div>
+            Bonus : <input type="number" name="myNumber">
+        </div>
+        <br>
+        <div>
+            Are you Eligible ? <input type="checkbox" name="myEligibility" >
+            <!-- if we want some checkbox to be ckecked by default then use checked  -->
+            <!-- checked by Default ? <input type="checkbox" name="myEligibility" checked> -->
+        </div>
+        <br>
+        <div>
+            <!-- if name of 2/more attribute of input tag is same then only 1 of them can be checked at a time -->
+            Gender : Male <input type="radio" name="myGender" id=""> Female <input type="radio" name="myGender" id="">
+            Other <input type="radio" name="myGender" id="">
+        </div>
+        <br>
+        <div>
+            Write about Yourself : <br> <textarea name="textAbotYou" id="" cols="100" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- to select an option by default use selected  -->
+            <label for="car">Car : </label>
+            <select name="myCar" id="car">
+                <option value="Select_none">None</option> 
+                <option value="indica">Indica</option>
+                <option value="swift" selected>Swift </option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit_Now">
+            <input type="reset" value="Form_reset">
+        </div>
+    </form>
+</body>
+</html>
